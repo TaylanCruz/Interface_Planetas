@@ -4,7 +4,17 @@
         <title>Start Page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
-    <body>
+    <body style="background-color:blue">
+        
+        <%
+        Conecta_Banco conn = new Conecta_Banco();
+        Connection conexao = conn.conectaPostegre("interface_planetas");
+        if(conexao!=null){
+            out.println("Conectado");
+        else{
+            out.println("Não conectado.");
+        }
+        %>
         <form action="Cadastro_Planetas_Servlet" method="get">
         
             <center><h3> Cadastro de Planetas </h3></center>

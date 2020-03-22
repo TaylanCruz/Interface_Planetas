@@ -25,7 +25,7 @@ public class Cadastro_Planetas_Servlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Cadastro_Planetas_Servlet at " + request.getContextPath() + "</h1>");
-            out.println("<h3> Bem-vindo, " + login +"!");
+            out.println("<h3> Bem-vinda, " + login +"!");
             out.println("</body>");
             out.println("</html>");
         }
